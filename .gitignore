@@ -1,0 +1,6 @@
+
+*.sqm
+
+.vscode/
+
+*.pbo
