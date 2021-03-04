@@ -23,6 +23,11 @@ class FFPP
 
 class HR
 {
+    class Create
+    {
+        class LGAirstrike {};
+    };
+
     class Init
     {
         class detector {};
