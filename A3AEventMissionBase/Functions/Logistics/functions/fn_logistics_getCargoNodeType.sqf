@@ -17,7 +17,6 @@
     Example: private _objNodeType = [_object] call HR_fnc_logistics_getCargoNodeType;
 */
 params [["_object", objNull, [objNull, ""]]];
-if (_object isKindOf "CAManBase") exitWith {2};//exception for the medical system
 private _type = if (_object isEqualType objNull) then { typeOf _object } else { _object };
 private _size = -1;
 if (_type isEqualTo "") exitWith {_size};

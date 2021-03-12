@@ -15,11 +15,11 @@
     Environment: Any
     Public: Yes
 
-    Example: [typeOf _vehicle] call A3A_fnc_classNameToModel
+    Example: [typeOf _vehicle] call HR_fnc_classNameToModel
 
     License: MIT License
 */
 
 params [["_className", "", [""]]];
-if !(isClass (configFile/"CfgVehicles"/_className)) exitWith { [1, "Invalid classname: " + _classname, "fn_classNameToModel.sqf"] call A3A_fnc_log; "N/A" };
+if !(isClass (configFile/"CfgVehicles"/_className)) exitWith { [1, "Invalid classname: " + _classname, "fn_classNameToModel.sqf"] call HR_fnc_log; "N/A" };
 getText (configFile >> "CfgVehicles" >> _className >> "model");
