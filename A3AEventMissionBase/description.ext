@@ -25,6 +25,8 @@ aiKills = 0; // Does not add AI to the scoreboard
 disabledAI = 1; //Disables AI in lobby slots
 allowFunctionsLog = 1;
 
+#include "Garage\Dialogs.hpp"
 class CfgFunctions {
     #include "functions.hpp"
+	#include "Garage\functions.hpp"
 };
