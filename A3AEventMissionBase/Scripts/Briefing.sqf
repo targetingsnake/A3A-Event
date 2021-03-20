@@ -19,7 +19,7 @@ switch (side player) do {
 			Etc...<br/>"
 		]];
 
-		player createDiaryRecord ["Diary", ["Addtional","
+		player createDiaryRecord ["Diary", ["Additional","
 			1- There are still civilian population in the area<br/>
 			2- There is active AAA around the outpost<br/>
 			Etc...<br/>"
@@ -52,7 +52,7 @@ switch (side player) do {
 			Etc...<br/>"
 		]];
 
-		player createDiaryRecord ["Diary", ["Addtional","
+		player createDiaryRecord ["Diary", ["Additional","
 			1- There are still civilian population in the area<br/>
 			2- There is active AAA around the outpost<br/>
 			Etc...<br/>"
@@ -85,7 +85,7 @@ switch (side player) do {
 			Etc...<br/>"
 		]];
 
-		player createDiaryRecord ["Diary", ["Addtional","
+		player createDiaryRecord ["Diary", ["Additional","
 			1- There are still civilian population in the area<br/>
 			2- There is active AAA around the outpost<br/>
 			Etc...<br/>"
@@ -118,7 +118,7 @@ switch (side player) do {
 			Etc...<br/>"
 		]];
 
-		player createDiaryRecord ["Diary", ["Addtional","
+		player createDiaryRecord ["Diary", ["Additional","
 			1- There are still civilian population in the area<br/>
 			2- There is active AAA around the outpost<br/>
 			Etc...<br/>"
