@@ -61,6 +61,11 @@ class HR
         class logistics_unload {};
     };
 
+    class Players
+    {
+        dressUp {};
+    };
+
     class UI
     {
         class customHint {};
