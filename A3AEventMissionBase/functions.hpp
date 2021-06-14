@@ -63,7 +63,7 @@ class HR
 
     class Players
     {
-        dressUp {};
+        class dressUp {};
     };
 
     class UI
