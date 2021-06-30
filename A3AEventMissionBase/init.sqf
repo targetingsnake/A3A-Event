@@ -42,3 +42,16 @@ if (hasinterface) then { // hasInterface checks whether the machine is a player 
     };
     1 faderadio 1;
 };
+
+/*
+//Vehicle garage action
+#include "Garage\CfgDefines.inc"
+["allVehicles", "init", {
+    if( ( [typeOf (_this#0)] call HR_GRG_fnc_getCatIndex ) isEqualTo -1 ) exitWith {};
+    (_this#0) addAction [
+        format [localize "STR_HR_GRG_addVehicle_Action", cfgDispName(typeOf (_this#0))]
+        , "[_this#0, clientOwner, call HR_GRG_dLock, player] remoteExecCall ['HR_GRG_fnc_addVehicle',2]", nil, 1.5, false, true, ""
+        , "(isNil {HR_GRG_Placing}) || {!HR_GRG_Placing}"
+    ];
+}] call CBA_fnc_addClassEventHandler;
+*/
