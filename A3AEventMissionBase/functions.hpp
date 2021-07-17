@@ -61,6 +61,11 @@ class HR
         class logistics_unload {};
     };
 
+    class Organisation
+    {
+        class HealAndRepair {};
+    };
+
     class Players
     {
         class dressUp {};
