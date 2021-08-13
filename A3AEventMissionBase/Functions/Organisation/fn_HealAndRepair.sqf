@@ -30,11 +30,11 @@ Params [
     ["_center", objNull, [ObjNull]]
     , ["_side", west, [west]]
 
-    , ["_healEnabled", true [true]]
-    , ["_restoreFatigue", true [true]]
-    , ["_repairEnabled", true [true]]
-    , ["_refuelEnabled", true [true]]
-    , ["_rearmEnabled", true [true]]
+    , ["_healEnabled", true, [true]]
+    , ["_restoreFatigue", true, [true]]
+    , ["_repairEnabled", true, [true]]
+    , ["_refuelEnabled", true, [true]]
+    , ["_rearmEnabled", true, [true]]
 ];
 //ADAPTED TO ANTISTASI EVENT TEAM NEEDS, ORIGINAL SCRIPT BY Barbolani, Spoffy and John Jordan
 if (!isServer) exitWith {false};
