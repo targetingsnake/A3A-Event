@@ -14,7 +14,7 @@
 
     Example:
 
-    License: Håkon Rydland Garage SHARED SOURCE LICENSE
+    License: APL-ND
 */
 if (isNil "HR_GRG_Prefix") then {HR_GRG_Prefix = "A3A-Event"; publicVariable "HR_GRG_Prefix"};
 //Overwrite client
