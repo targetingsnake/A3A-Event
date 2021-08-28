@@ -25,18 +25,14 @@ Example: `cd ../../..` would move you up 3 directories.
 2) first lets get the main branch with this: `git checkout main`
 3) then pull any changes from git to your local branch with `git pull`
 4) next branch from the main branch with this: `git branch nameOfBranchHere`
-5) now we get the newely created branch like so: `git checkout nameOfBranchHere`
-
-6) copy a fresh mission.sqm into the folder and rename it with the map name
-7) for ease of use its now recommended to create a symbolic link to your mp folder from the git repository (recommend using the tool 
-[Symlink creator](https://schinagl.priv.at/nt/hardlinkshellext/linkshellextension.html#download))  
-Note that if the mp folder and git folder are on different drives you need to create a junction instead  
-![image](https://user-images.githubusercontent.com/61709767/131226206-0ba325fc-b66c-4ab6-bb7f-b657e24b56fe.png)  
-![image](https://user-images.githubusercontent.com/61709767/131226219-5bac6dc2-0c74-43a4-9129-47d75b023bdb.png)
-
-
-
+5) now we get the newely created branch like so: `git checkout nameOfBranchHere`  
 For more info on the checkout or branch commands use `git checkout --help` or `git branch --help` this will take you to the git wiki page for the respective command.
+
+6) copy a fresh mission.sqm into the folder  
+![image](https://user-images.githubusercontent.com/61709767/131227238-fcdc092d-85cd-4744-b5e6-71d4615bde0a.png)
+7) for ease of use its now recommended to create a symbolic from the files and folders inside of the `A3AEventMissionBase` folder to the missions folder in your mp folder (that folder needs the map sufix.  
+![image](https://user-images.githubusercontent.com/61709767/131227257-1724472f-df77-4274-9baa-678c03d78cd2.png)  
+![image](https://user-images.githubusercontent.com/61709767/131227273-d4d0f8fe-08d8-4d2f-b8f9-abf154be6756.png)
 
 ### Updating the base code
 1) open your git interface and update the main branch using:  
