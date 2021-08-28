@@ -12,16 +12,20 @@
 ### Creating a new mission
 1) Open your git interface
 2) first lets get the main branch with this: `git checkout main`
-3) next branch from the main branch with this: `git branch nameOfBranchHere`
-4) now we get the newely created branch like so: `git checkout nameOfBranchHere`
+3) then pull any changes from git to your local branch with `git pull`
+4) next branch from the main branch with this: `git branch nameOfBranchHere`
+5) now we get the newely created branch like so: `git checkout nameOfBranchHere`
 
 For more info on the checkout or branch commands use `git checkout --help` or `git branch --help` this will take you to the git wiki page for the respective command.
 
 ### Updating the base code
-1) open your git interface
-2) first start of with getting your branch: `git checkout nameOfBranchHere`
-3) next you want to merge main into your branch: `git merge main`
-Thats it, assuming you havent edited any files that was tuched in the update then it should merge the update to your mission.
+1) open your git interface and update the main branch using:  
+    `git checkout main`  
+    `git pull`
+2) next you want to check out the branch you want to update: `git checkout nameOfBranchHere`
+3) next you want to merge main into your branch: `git merge main`  
+Thats it, assuming you havent edited any files that was tuched in the update then it should merge the update to your mission.  
+if you do encounter a merge conflict though this tutorial could help [*Merge conflicts and how to resolve them*](https://www.atlassian.com/git/tutorials/using-branches/merge-conflicts)
 
 for more info on the `merge` command use `git merge --help` this wil take you to the git wiki page for the merge command.
 
