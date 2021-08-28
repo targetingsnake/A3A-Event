@@ -16,6 +16,15 @@
 4) next branch from the main branch with this: `git branch nameOfBranchHere`
 5) now we get the newely created branch like so: `git checkout nameOfBranchHere`
 
+6) copy a fresh mission.sqm into the folder and rename it with the map name
+7) for ease of use its now recommended to create a symbolic link to your mp folder from the git repository (recommend using the tool 
+[Symlink creator](https://schinagl.priv.at/nt/hardlinkshellext/linkshellextension.html#download))  
+Note that if the mp folder and git folder are on different drives you need to create a junction instead  
+![image](https://user-images.githubusercontent.com/61709767/131226206-0ba325fc-b66c-4ab6-bb7f-b657e24b56fe.png)  
+![image](https://user-images.githubusercontent.com/61709767/131226219-5bac6dc2-0c74-43a4-9129-47d75b023bdb.png)
+
+
+
 For more info on the checkout or branch commands use `git checkout --help` or `git branch --help` this will take you to the git wiki page for the respective command.
 
 ### Updating the base code
