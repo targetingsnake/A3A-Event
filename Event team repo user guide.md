@@ -9,6 +9,17 @@
 
 ##### *Recommended interface Visual studio code*
 
+### Navigating with git bash
+to enter a folder use the `cd` command, this will try to move from your current directory to the directory specified by the path  
+Example: for me to navigate to this path on my computer: `C:\Users\hrr1\Documents\GitKraken\A3A-Event` which holds my A3A Event repository  
+i need to enter the command like this `C:\\Users\\hrr1\\Documents\\GitKraken\\A3A-Event`  
+take note of the added slash before every slash, this is due to special characters having special meaning, and we use the `\` to escape that meaning and treat it as normal.  
+this should then take us in to the directory and give us this feedback:  
+![image](https://user-images.githubusercontent.com/61709767/131226531-0251001f-f601-4621-b90b-d38d6c6819d5.png)  
+  
+To navigate back one directory use `cd ..` for multiple levels add `/..` for every additional level  
+Example: `cd ../../..` would move you up 3 directories.
+
 ### Creating a new mission
 1) Open your git interface
 2) first lets get the main branch with this: `git checkout main`
