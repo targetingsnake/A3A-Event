@@ -29,6 +29,11 @@ class CfgFunctions {
             class LGAirstrike {};
         };
 
+        class Diary {
+            class briefing {};
+            class credits {};
+        };
+
         class Init
         {
             class detector {};

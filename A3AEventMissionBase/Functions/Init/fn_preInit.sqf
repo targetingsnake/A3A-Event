@@ -1,3 +1,21 @@
+/*
+Author: Håkon
+Description:
+    Pre mission init
+
+Arguments: nil
+
+Return Value: nil
+
+Scope: Any
+Environment: unscheduled
+Public: No
+Dependencies:
+
+Example:
+
+License: MIT License
+*/
 #include "..\..\Includes\common.inc"
 FIX_LINE_NUMBERS()
 Info("preInit");
@@ -6,7 +24,9 @@ if (isServer) then {
     [] call HR_fnc_detector;
     [] call HR_fnc_logistics_initNodes;
     [] call HR_GRG_fnc_initServer; //garage server init
-    addMissionEventHandler ["EntityRespawned", HR_fnc_onEntityRespawn];
+    addMissionEventHandler ["EntityRespawned", {
+        _this remoteExecCall ["HR_fnc_onEntityRespawn", owner (_this#0)];
+    }];
 };
 
 // Modify default of which features are enabled or not.
