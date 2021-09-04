@@ -1,0 +1,1 @@
+../../A3AEventMissionBase/initPlayerLocal.sqf

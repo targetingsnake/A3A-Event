@@ -1,0 +1,1 @@
+../../A3AEventMissionBase/onPlayerRespawn.sqf
