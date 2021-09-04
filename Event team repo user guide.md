@@ -27,12 +27,16 @@ Example: `cd ../../..` would move you up 3 directories.
 4) next branch from the main branch with this: `git branch nameOfBranchHere`
 5) now we get the newely created branch like so: `git checkout nameOfBranchHere`  
 For more info on the checkout or branch commands use `git checkout --help` or `git branch --help` this will take you to the git wiki page for the respective command.
-
-6) copy a fresh mission.sqm into the folder  
-![image](https://user-images.githubusercontent.com/61709767/131227238-fcdc092d-85cd-4744-b5e6-71d4615bde0a.png)
-7) for ease of use its now recommended to create a symbolic from the files and folders inside of the `A3AEventMissionBase` folder to the missions folder in your mp folder (that folder needs the map sufix.  
-![image](https://user-images.githubusercontent.com/61709767/131227257-1724472f-df77-4274-9baa-678c03d78cd2.png)  
-![image](https://user-images.githubusercontent.com/61709767/131227273-d4d0f8fe-08d8-4d2f-b8f9-abf154be6756.png)
+6) copy a fresh mission.sqm into a new mission folder in `Missions`.   
+![image](https://user-images.githubusercontent.com/61709767/132094138-795e04ef-9b15-4e5b-964c-f1194411bfe2.png)
+7) now create a symbolic from the files and folders inside of the `A3AEventMissionBase` folder to the missions folder in your `Missions\${yourmission}` (that folder needs the map suffix).  
+![image](https://user-images.githubusercontent.com/61709767/132094227-d5b87cdf-37aa-467c-94c7-db183921f9bc.png)  
+![image](https://user-images.githubusercontent.com/61709767/132094243-323294fa-98fe-4bc1-a4a7-cf62258a0179.png)
+![image](https://user-images.githubusercontent.com/61709767/132094270-04b92148-8c8e-49c7-9b30-9822c68f9a11.png)  
+8) (first time setup only) Now make a symbolic link between the missions folder and you mpMissions folder.  
+![image](https://user-images.githubusercontent.com/61709767/132094362-9a570797-ee25-49da-a6b8-8de275cc1e18.png)
+![image](https://user-images.githubusercontent.com/61709767/132094369-68fb4ed8-9745-44a9-8f48-10c9aa065062.png)
+![image](https://user-images.githubusercontent.com/61709767/132094397-d55e54eb-d871-4407-b578-e874cf1f3384.png)
 
 ### Updating the base code
 1) open your git interface and update the main branch using:  
