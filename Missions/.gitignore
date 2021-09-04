@@ -1,10 +1,5 @@
-
-*.sqm
-
 .vscode/
-
 *.pbo
-
 */Functions
 */Garage
 */Images
