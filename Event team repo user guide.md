@@ -27,14 +27,14 @@ Example: `cd ../../..` would move you up 3 directories.
 4) next branch from the main branch with this: `git branch nameOfBranchHere`
 5) now we get the newely created branch like so: `git checkout nameOfBranchHere`  
 For more info on the checkout or branch commands use `git checkout --help` or `git branch --help` this will take you to the git wiki page for the respective command.
-6) copy a fresh mission.sqm into a new mission folder in `Missions`.   
-![image](https://user-images.githubusercontent.com/61709767/132094138-795e04ef-9b15-4e5b-964c-f1194411bfe2.png)
+6) copy a fresh mission.sqm into a new mission folder in `Missions` along with a description.ext (found in `Standard Files`) and optionaly init.sqf.   
+![image](https://user-images.githubusercontent.com/61709767/132096244-5f9b188a-f93a-4ddf-b55d-5a5bb0716fe7.png)  
 7) now create a symbolic from the files and folders inside of the `A3AEventMissionBase` folder to the missions folder in your `Missions\${yourmission}` (that folder needs the map suffix).  
-![image](https://user-images.githubusercontent.com/61709767/132094227-d5b87cdf-37aa-467c-94c7-db183921f9bc.png)  
-![image](https://user-images.githubusercontent.com/61709767/132094243-323294fa-98fe-4bc1-a4a7-cf62258a0179.png)
-![image](https://user-images.githubusercontent.com/61709767/132094270-04b92148-8c8e-49c7-9b30-9822c68f9a11.png)  
+![image](https://user-images.githubusercontent.com/61709767/132096258-d2463f72-35a7-43cc-bb64-dba91f604aaa.png)
+![image](https://user-images.githubusercontent.com/61709767/132096270-cd785807-fc64-4276-836b-2734fad85017.png)
+![image](https://user-images.githubusercontent.com/61709767/132096296-5b4dd530-0d8a-46b7-a125-591d075f061e.png)
 8) (first time setup only) Now make a symbolic link between the missions folder and you mpMissions folder.  
-![image](https://user-images.githubusercontent.com/61709767/132094362-9a570797-ee25-49da-a6b8-8de275cc1e18.png)
+![image](https://user-images.githubusercontent.com/61709767/132096328-adf7fc6c-5674-42b2-adc6-3ee1113faad0.png)
 ![image](https://user-images.githubusercontent.com/61709767/132094369-68fb4ed8-9745-44a9-8f48-10c9aa065062.png)
 ![image](https://user-images.githubusercontent.com/61709767/132094397-d55e54eb-d871-4407-b578-e874cf1f3384.png)
 
