@@ -27,7 +27,4 @@ allowFunctionsLog = 1;
 
 //dont touch the lines bellow this
 #include "Garage\Dialogs.hpp"
-class CfgFunctions {
-    #include "functions.hpp"
-	#include "Garage\functions.hpp"
-};
+#include "functions.hpp"
