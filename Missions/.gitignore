@@ -5,10 +5,10 @@
 
 *.pbo
 
-*/Functions/
-*/Garage/
-*/Images/
-*/Includes/
+*/Functions
+*/Garage
+*/Images
+*/Includes
 */description.ext
 */functions.hpp
 */init.sqf
