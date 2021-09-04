@@ -5,11 +5,11 @@
 
 *.pbo
 
-Functions/
-Garage/
-Images/
-Includes/
-description.ext
-functions.hpp
-init.sqf
-Stringtable.xml
+*/Functions/
+*/Garage/
+*/Images/
+*/Includes/
+*/description.ext
+*/functions.hpp
+*/init.sqf
+*/Stringtable.xml
