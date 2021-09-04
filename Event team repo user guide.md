@@ -1,15 +1,12 @@
 # Event team repo user guide
-
-## Creating a new mission
-### Tools
+## Tools
 * Git interface
   * [Git bash](https://git-scm.com/downloads)
   * IDE ([Visual Studio Code](https://code.visualstudio.com/download), [Atom](https://atom.io/),... etc.)
 
-
 ##### *Recommended interface Visual studio code*
 
-### Navigating with git bash
+## Navigating with git bash
 to enter a folder use the `cd` command, this will try to move from your current directory to the directory specified by the path  
 Example: for me to navigate to this path on my computer: `C:\Users\hrr1\Documents\GitKraken\A3A-Event` which holds my A3A Event repository  
 i need to enter the command like this `C:\\Users\\hrr1\\Documents\\GitKraken\\A3A-Event`  
@@ -20,7 +17,7 @@ this should then take us in to the directory and give us this feedback:
 To navigate back one directory use `cd ..` for multiple levels add `/..` for every additional level  
 Example: `cd ../../..` would move you up 3 directories.
 
-### Creating a new mission
+## Creating a new mission
 1) Open your git interface
 2) first lets get the main branch with this: `git checkout main`
 3) then pull any changes from git to your local branch with `git pull`
@@ -38,7 +35,7 @@ For more info on the checkout or branch commands use `git checkout --help` or `g
 ![image](https://user-images.githubusercontent.com/61709767/132094369-68fb4ed8-9745-44a9-8f48-10c9aa065062.png)
 ![image](https://user-images.githubusercontent.com/61709767/132094397-d55e54eb-d871-4407-b578-e874cf1f3384.png)
 
-### Updating the base code
+## Updating the base code
 1) open your git interface and update the main branch using:  
     `git checkout main`  
     `git pull`
@@ -49,7 +46,7 @@ if you do encounter a merge conflict though this tutorial could help [*Merge con
 
 for more info on the `merge` command use `git merge --help` this wil take you to the git wiki page for the merge command.
 
-### Uploading your mission on github for other team members to download/edit
+## Uploading your mission on github for other team members to download/edit
 1) first checkout your branch
 2) push your branch to the repo with: `git push -u origin nameOfBranchHere`
 
