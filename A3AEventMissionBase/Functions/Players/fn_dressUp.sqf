@@ -18,7 +18,8 @@ Example:
 
 License: MIT License
 */
-params [ ["_unit", objNull] ];
+params [["_oldUnit", objNull], ["_jipOrNewUnit", objNull, [objNull, true]]];
+private _unit = if (_jipOrNewUnit isEqualType objNull) then {_jipOrNewUnit} else {_oldUnit}; //determine target object as this is used on init and respawn
 
 /*
 //build lists to check for dress up
