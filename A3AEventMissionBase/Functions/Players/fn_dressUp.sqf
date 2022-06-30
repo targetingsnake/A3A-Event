@@ -19,7 +19,7 @@ Example:
 License: MIT License
 */
 params [["_oldUnit", objNull], ["_jipOrNewUnit", objNull, [objNull, true]]];
-private _unit = if (_jipOrNewUnit isEqualType objNull) then {_oldUnit} else {_jipOrNewUnit}; //determine target object as this is used on init and respawn
+/*private _unit = if (_jipOrNewUnit isEqualType objNull) then {_oldUnit} else {_jipOrNewUnit}; //determine target object as this is used on init and respawn
 
 
 //build lists to check for dress up
@@ -44,4 +44,4 @@ if (_unit in _list3) then {
     _unit setVariable ["face", _face];
 };
 
-//nil;
+*/
