@@ -5,14 +5,16 @@ class Header
 	maxPlayers = 64;	// maximum number of players the mission supports
 };
 
+// Section 1
 author= "NameHere [Antistasi Event Team]"; // Name of the creator(s)
 OnLoadName = "Mission name"; // Mission name in the loading screen, keep it short without operation
 OnLoadMission = "Powered by ArmaHosts"; // Bottom of the loading screen, don't change
-loadScreen = "Images\Antistasi.paa"; // The picture displayed during loading screen
-overviewPicture = "Images\Antistasi.paa"; // The picture displayed in the mission selection screen
+loadScreen = "Images\image.jpg"; // The picture displayed during loading screen
+overviewPicture = "Images\image.jpg"; // The picture displayed in the mission selection screen
 briefingName = "Operation Some Thing"; // The Mission name displayed in the mission selection menu
 overviewText = "Description of mission here"; // The text above the picture in the mission selection menu
 
+// Section 2
 respawn = 3; // Sets respawn type, current is BASE
 respawnOnStart = 0; // (Disabled) Respawn player when he joins the game. Available only for INSTANT and BASE respawn types
 respawnDelay = 99999; // Sets respawn time for players
