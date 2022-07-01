@@ -9,6 +9,6 @@ Title
 ---------------------------------------------------------------------------*/
 params ["_player", "_jip"];
 
-#include "initScripts\initScripts.inc";
-#include "initScripts\initDiary.inc";
-#include "initScripts\initDisclaimer.inc";
+#include "initScripts\initScripts.sqf";
+#include "initScripts\initDiary.sqf";
+#include "initScripts\initDisclaimer.sqf";
