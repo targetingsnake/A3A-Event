@@ -8,4 +8,4 @@ Parameters:
 ---------------------------------------------------------------------------*/
 params ["_newUnit", "_oldUnit", "_respawn", "_respawnDelay"];
 
-#include "initScripts\initScripts.inc";
+#include "initScripts\initScripts.sqf";
