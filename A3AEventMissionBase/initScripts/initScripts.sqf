@@ -11,15 +11,20 @@ _this call HR_fnc_dressUp;
 	[ACE_player, _x, true] call ace_safemode_fnc_setWeaponSafety;
 } forEach (weapons ACE_player);
 
-[] spawn {
-    waitUntil{!(isNil "A3A_disclaimerDone")};
-    {
-    	sleep 5;
+[missionNamespace, "A3A_disclaimerDone", {
+	sleep 5;
 
+	{
 		[ACE_player, _x, false] call ace_safemode_fnc_setWeaponSafety;
 	} forEach (weapons ACE_player);
-};
+}
+] call BIS_fnc_addScriptedEventHandler;
 
+[] spawn {
+    waitUntil{!(isNil "A3A_disclaimerDone")};
+    
+};
+							
 // Add items
 player additemToUniform "ACE_EarPlugs";
 player additemToUniform "acex_intelitems_notepad";

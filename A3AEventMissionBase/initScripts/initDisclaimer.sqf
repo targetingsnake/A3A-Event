@@ -4,7 +4,7 @@ if (hasInterface) then {
 
     "disclaimerLayer_Background" cutText ["", "BLACK FADED", -1, true, false];
 
-    private _disclaimerCodeHandler = [] spawn {
+    [] spawn {
 
         waitUntil{!(isNil "BIS_fnc_init")};
 
@@ -29,8 +29,8 @@ if (hasInterface) then {
         5 fadeRadio 1;
 
         sleep 5;
+        [missionNamespace, "A3A_disclaimerDone", []] call BIS_fnc_callScriptedEventHandler;
     };
 
-    waitUntil{scriptDone _disclaimerCodeHandler};
-    "dynamicBlur" ppEffectEnable false;
+    [missionNamespace, "A3A_disclaimerDone", {"dynamicBlur" ppEffectEnable false;}] call BIS_fnc_addScriptedEventHandler;
 };
