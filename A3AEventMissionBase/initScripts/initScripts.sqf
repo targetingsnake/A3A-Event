@@ -23,3 +23,6 @@ _this call HR_fnc_dressUp;
 // Add items
 player additemToUniform "ACE_EarPlugs";
 player additemToUniform "acex_intelitems_notepad";
+
+// Dynamic groups system
+["InitializePlayer", [player, true]] call BIS_fnc_dynamicGroups;
