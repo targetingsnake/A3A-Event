@@ -1,3 +1,24 @@
+/*
+    Author: [martin/targetingsnake]
+    Description:
+       Detects loaded mods
+
+    Arguments:
+
+    Return Value:
+    <String> Script handler
+
+    Scope: Server
+    Environment: Scheduled
+    Public: Yes
+    Dependencies:
+
+    Example: call TS_fnc_detectMods;
+
+
+    License: MIT License
+*/
+
 if (!isServer) exitWith {};
 
 TS_hasRHS = false;

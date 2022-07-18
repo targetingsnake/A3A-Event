@@ -1,3 +1,24 @@
+/*
+    Author: [martin/targetingsnake]
+    Description:
+       Loading of enemy classnames into variables necessary for other functions
+
+    Arguments:
+
+    Return Value:
+    <String> Script handler
+
+    Scope: Server
+    Environment: Scheduled
+    Public: Yes
+    Dependencies:
+
+    Example: call TS_fnc_SpawnInfantryOnMarker;
+
+
+    License: MIT License
+*/
+
 if (!isServer) exitWith {};
 
 TS_OpforEnemiesHeavy = [];
@@ -6,6 +27,7 @@ TS_OpforVehiclesMedium = [];
 TS_OpforVehiclesLight = [];
 TS_OpforNavalHeavy = [];
 TS_OpforNavalLight = [];
+TS_OpforLoadoutBaseUnit = ["O_Soldier_F"];
 
 #include "Units\cup.sqf"
 #include "Units\rhs.sqf"

@@ -1,7 +1,46 @@
-params ["_markerAO", "_markerEnemies", ["_UnitTypes_light", TS_OpforEnemiesLight], ["_UnitTypes_heavy", TS_OpforEnemiesHeavy], ["_waveGoals", 1], ["_taskID", -1], ["_minMaxGroup", [3,8]] , ["_groupSizeInf", [3,9]]];
+/*
+    Author: [martin/targetingsnake]
+    Description:
+        Sends a random amount of troops torwards players at given location
+
+    Arguments:
+    0. <String>  marker variable name of selected position
+    1. <Array><String> marker variable names of spawn positions
+    2. <Array><units>  Units to copy loadout from [Optional - default: Empty Array]
+    3. <Array><string>  classnames for light units (if custom loadout is given, will be ignored) [Optional - default: classes from detected mods]
+    4. <Array><string>  classnames for heavy units (if custom loadout is given, will be ignored) [Optional - default: classes from detected mods]
+    5. <integer> Number of Waves which players have to survive [Optional - default: 5]
+	6. <integer> Number of task (if below zero, no task will be created) [Optional - default: -1]
+	7. <Array><int, int> Groups to spawn [Optional - default: [3,8]]]
+	7. <Array><int, int> Enemies per Group [Optional - default: [3,9]]]
+
+    Return Value:
+    <String> Script handler
+
+    Scope: Server
+    Environment: Scheduled
+    Public: Yes
+    Dependencies:
+
+    Example: ["marker_ao", ["spawn1", "spawn2"]] spawn TS_fnc_SpawnInfantryOnMarker;
+
+
+    License: MIT License
+*/
+
+params ["_markerAO", "_markerEnemies", ["_loadouts", []], ["_UnitTypes_light", TS_OpforEnemiesLight], 
+	["_UnitTypes_heavy", TS_OpforEnemiesHeavy], ["_waveGoals", 1], 
+	["_taskID", -1], ["_minMaxGroup", [3,8]] , ["_groupSizeInf", [3,9]]];
 
 
 if (!isServer) exitWith {};
+_customLoadouts = false;
+
+if (count(_loadouts) > 0) then {
+	_UnitTypes_light = TS_OpforLoadoutBaseUnit;
+	_UnitTypes_heavy = TS_OpforLoadoutBaseUnit;
+	_customLoadouts = true;
+};
 
 _heavyTendence = 0;
 if (count _UnitTypes_light == 0) then {
@@ -61,6 +100,10 @@ while {_playerNear && !_exit} do {
 				};
 				if (_unitRandom != "") then {
 					_spawnedUnit = _group createUnit [_unitRandom, _spawnPos, [], 20, "FORM"];
+					if (_customLoadouts) then {
+						_rndLoadoutUnit = selectRandom _loadouts;
+						_spawnedUnit setUnitLoadout (getUnitLoadout _rndLoadoutUnit);
+					};
 					{  
 						_x addCuratorEditableObjects [[_spawnedUnit], true]; 
 					} forEach allCurators;

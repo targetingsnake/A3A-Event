@@ -1,3 +1,24 @@
+/*
+    Author: [martin/targetingsnake]
+    Description:
+       Detects infantry units
+
+    Arguments:
+
+    Return Value:
+    <String> Script handler
+
+    Scope: Server
+    Environment: Scheduled
+    Public: Yes
+    Dependencies:
+
+    Example: call TS_fnc_infantryDetector;
+
+
+    License: MIT License
+*/
+
 if (!isServer) exitWith {};
 
 while {true} do {
