@@ -9,6 +9,9 @@ Title
 ---------------------------------------------------------------------------*/
 params ["_player", "_jip"];
 
+_intro = ["Intro", -1] call BIS_fnc_getParamValue;
+MissionIntro = (_intro == 1);
+
 #include "initScripts\initScripts.sqf";
 #include "initScripts\initDiary.sqf";
 #include "initScripts\initDisclaimer.sqf";
