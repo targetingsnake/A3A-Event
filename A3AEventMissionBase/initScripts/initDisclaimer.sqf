@@ -1,4 +1,4 @@
-if (hasInterface) then {
+if (hasInterface && MissionIntro) then {
     0 fadeRadio 0;
     0 fadeSound 0;
 
