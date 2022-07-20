@@ -61,6 +61,10 @@ class CfgFunctions {
         };
         class Init {
             class enemyUnits{};
+            class init_improvised_vehicles{};
         };
+        class AI {
+            class disableAutonomousModePermanently{};
+        }
     };
 }

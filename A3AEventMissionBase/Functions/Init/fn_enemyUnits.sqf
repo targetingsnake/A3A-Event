@@ -10,10 +10,10 @@
 
     Scope: Server
     Environment: Scheduled
-    Public: Yes
+    Public: No
     Dependencies:
 
-    Example: call TS_fnc_SpawnInfantryOnMarker;
+    Example: call TS_fnc_enemyUnits;
 
 
     License: MIT License
