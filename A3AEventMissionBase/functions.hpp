@@ -47,5 +47,6 @@ class HR
 class A3A{
     class AI{
         class disableLayerAI {};
+        class enableLayerAI {};
     }
 };
