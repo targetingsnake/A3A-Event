@@ -29,5 +29,9 @@ _this call HR_fnc_dressUp;
 player additemToUniform "ACE_EarPlugs";
 player additemToUniform "acex_intelitems_notepad";
 
+if (CRBN) then {
+	//[true] call TS_fnc_initCRBN;
+};
+
 // Dynamic groups system
 ["InitializePlayer", [player, true]] call BIS_fnc_dynamicGroups;

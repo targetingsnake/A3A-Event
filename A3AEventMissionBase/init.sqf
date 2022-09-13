@@ -10,15 +10,17 @@ FFPP_FFPunTellAdmin = true;
 missionNamespace setVariable ["ACE_maxWeightDrag", 2000];
 missionNamespace setVariable ["ACE_maxWeightCarry", 2000];
 
-_debug = ["Debug", -1] call BIS_fnc_getParamValue;
-_intro = ["Intro", -1] call BIS_fnc_getParamValue;
-_despawnDelayType = ["DelayGarabage", -1] call BIS_fnc_getParamValue;
-_deleteWave = ["DeleteRestWave", -1] call BIS_fnc_getParamValue;
-_spawnDelay = ["DelaySpawn", -1] call BIS_fnc_getParamValue;
-_SpawnType = ["SpawnSettings", -1] call BIS_fnc_getParamValue;
-_VanillaUnits = ["EnableVanillaUnits", -1] call BIS_fnc_getParamValue;
+private _debug = ["Debug", -1] call BIS_fnc_getParamValue;
+private _intro = ["Intro", -1] call BIS_fnc_getParamValue;
+private _despawnDelayType = ["DelayGarabage", -1] call BIS_fnc_getParamValue;
+private _deleteWave = ["DeleteRestWave", -1] call BIS_fnc_getParamValue;
+private _spawnDelay = ["DelaySpawn", -1] call BIS_fnc_getParamValue;
+private _SpawnType = ["SpawnSettings", -1] call BIS_fnc_getParamValue;
+private _VanillaUnits = ["EnableVanillaUnits", -1] call BIS_fnc_getParamValue;
+private _CRBNenabled = ["CRBNEnabled", -1] call BIS_fnc_getParamValue;
 MissionDebug = (_debug == 1);
 MissionIntro = (_intro == 1);
+CRBN = (_CRBNenabled == 1) ;
 IntroPlayed = false;
 DelayDespawnType = (_despawnDelayType == 1);
 DeleteRestWave = (_deleteWave == 1);
@@ -27,6 +29,10 @@ SetNvgAvailable = false;
 SpawnDelay = (_spawnDelay == 1);
 SpawnType = (_SpawnType == 1);
 VanillaUnits = (_VanillaUnits == 1);
+
+if (CRBN) then {
+	call TS_fnc_initCRBN;
+};
 
 if (isServer) then {
 	publicVariable "MissionDebug";
@@ -37,7 +43,8 @@ if (isServer) then {
 	publicVariable "SpawnDelay";
 	publicVariable "IntroPlayed";
 	publicVariable "SpawnType";
-	publicVariable "VanillaUnits"
+	publicVariable "VanillaUnits";
+	publicVariable "CRBN";
 };
 
 call TS_fnc_detectMods;

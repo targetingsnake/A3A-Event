@@ -54,18 +54,32 @@ class CfgFunctions {
 
     class TS {
         class spawnEnemy {
-            class SpawnInfantryOnMarker{};
+            class SpawnInfantryOnMarker {};
         };
         class Detectors{
-            class detectMods{};
-            class infantryDetector{};
+            class detectMods {};
+            class infantryDetector {};
         };
         class Init {
-            class enemyUnits{};
-            class init_improvised_vehicles{};
+            class enemyUnits {};
+            class init_improvised_vehicles {};
         };
         class AI {
-            class disableAutonomousModePermanently{};
+            class disableAutonomousModePermanently {};
+            class getAISkill {};
+            class setAISkill {};
+        };
+        class CRBN {
+            class initCRBN {};
+            class crbnEventhandlerAdd {};
+            class crbnEventhandlerAddCBA {};
+            class crbnCSexplode {};
+            class CSGasVFX {};
+            class CSGasPhysicalDamage {};
+            class CSGasHeal {};
+        };
+        class Utility {
+            class DevLogSys {};
         }
     };
 }
